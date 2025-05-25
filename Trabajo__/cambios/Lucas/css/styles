@@ -159,3 +159,127 @@ body {
 .buscador button:hover {
   background-color: #f25c54;
 }
+
+#categorias {
+  margin-top: 20px;
+  background-color: transparent; /* Elimina fondo beige */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoria {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; /* Mantenemos fondo blanco solo dentro de la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover {
+  transform: scale(1.03); /* Efecto hover suave */
+}
+
+.titulo-categoria {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c2c2c;
+  background-color: white;
+}
+
+.categoria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 50px; /* Espacio para el botón */
+}
+
+.categoria button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #38697c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.categoria button:hover {
+  background-color: #38697c;
+}
+
+
+/* --- FOOTER --- */
+footer {
+  background-color: #264653; /* Footer */
+  color: #e9d8a6; /* Texto claro */
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer .social {
+  margin-top: 0.5em;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 0.5em;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+footer .social a:hover {
+  color: #f4a261; /* Hover links */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .navbar,
+  .sub-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+  .logo img {
+    margin-left: 0;
+  }
+  .sub-menu li a {
+    padding: 10px 10px 10px 0;
+    font-size: 0.95em;
+  }
+  .buscador {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
